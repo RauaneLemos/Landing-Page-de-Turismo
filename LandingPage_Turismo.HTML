@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rio de Janeiro — Sua próxima viagem</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cor-primaria: #0B5563;
+      --cor-destaque: #E9A319;
+      --cor-fundo:    #F6F8FA;
+      --cor-texto:    #263238;
+      --cor-rodape:   #10303C;
+    }
+
+    * {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', 'Segoe UI', sans-serif;
+      background-color: var(--cor-fundo);
+      color: var(--cor-texto);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    header {
+      background: linear-gradient(160deg, #0B3C4A 0%, #0B5563 55%, #178A9E 100%);
+      color: #fff;
+      text-align: center;
+      padding: 96px 24px;
+    }
+
+    .tagline {
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--cor-destaque);
+    }
+
+    header h1 {
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      font-weight: 800;
+      letter-spacing: 1px;
+      margin: 12px 0 16px;
+    }
+
+    header p {
+      font-weight: 300;
+      font-size: 1.15rem;
+      max-width: 560px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      color: var(--cor-primaria);
+      font-weight: 800;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      position: relative;
+      padding-bottom: 12px;
+    }
+
+    h2::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 56px;
+      height: 4px;
+      border-radius: 2px;
+      background-color: var(--cor-destaque);
+    }
+
+    section {
+      padding: 64px 0;
+    }
+
+    section.fundo-claro {
+      background-color: #fff;
+    }
+
+    figure {
+      margin: 40px auto 0;
+    }
+
+    figure img {
+      width: 100%;
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      display: block;
+    }
+
+    figcaption {
+      font-size: 0.9rem;
+      color: #78909C;
+      text-align: center;
+      margin-top: 12px;
+    }
+
+    .atracoes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 28px;
+      margin-top: 40px;
+    }
+
+    .atracoes article {
+      background-color: #fff;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+      padding: 24px;
+    }
+
+    .atracoes article img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 16px;
+    }
+
+    .atracoes h3 {
+      color: var(--cor-primaria);
+      font-size: 1.25rem;
+      margin-bottom: 8px;
+    }
+
+    .atracoes p {
+      font-size: 0.95rem;
+      font-weight: 300;
+    }
+
+    footer {
+      background-color: var(--cor-rodape);
+      color: #CFD8DC;
+      text-align: center;
+      padding: 28px 24px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        padding: 64px 24px;
+      }
+      header h1 {
+        font-size: 2.2rem;
+      }
+      section {
+        padding: 48px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <p class="tagline">A Cidade Maravilhosa</p>
+    <h1>Rio de Janeiro</h1>
+    <p>Natureza, praias e cultura no coração do Brasil.</p>
+  </header>
+
+  <main>
+
+    <section>
+      <div class="container">
+        <h2>Sua próxima viagem começa aqui</h2>
+        <p>
+          Bem-vindo ao Rio de Janeiro, a Cidade Maravilhosa. Entre montanhas cobertas
+          pela Mata Atlântica, praias de águas mornas e um skyline pontuado por
+          cartões-postais reconhecidos no mundo inteiro, a cidade mistura natureza,
+          cultura e alegria como nenhum outro destino. Do nascer do sol na orla ao
+          pôr do sol nos mirantes, há sempre um novo cenário esperando por você.
+        </p>
+
+        <figure>
+          <img
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Rio%20de%20Janeiro%2C%20P%C3%A3o%20de%20A%C3%A7%C3%BAcar%20from%20Cristo%20Redentor%20(15744316848).jpg?width=1280"
+            alt="Pão de Açúcar e Baía de Guanabara vistos do Corcovado">
+          <figcaption>Pão de Açúcar e Baía de Guanabara vistos do Corcovado, no Rio de Janeiro (RJ).</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="fundo-claro">
+      <div class="container">
+        <h2>Descubra 3 destinos imperdíveis no Rio de Janeiro</h2>
+        <p>
+          Poucas cidades reúnem, em um só roteiro, monumentos históricos, mirantes
+          naturais e praias icônicas. Confira três atrações que não podem ficar
+          de fora do seu roteiro carioca:
+        </p>
+
+        <div class="atracoes">
+
+          <article>
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Cristo%20Redentor%20-%20Rio%20de%20Janeiro%20-%2020230321174546.jpg?width=1280"
+              alt="Estátua do Cristo Redentor no topo do morro do Corcovado">
+            <h3>Cristo Redentor</h3>
+            <p>
+              No topo do morro do Corcovado, a 710 metros de altitude, o Cristo
+              Redentor recebe visitantes de braços abertos. Eleito uma das Novas
+              Sete Maravilhas do Mundo, o monumento oferece vista panorâmica de 360°
+              da cidade — e o trem que sobe pela Floresta da Tijuca já é um passeio
+              à parte.
+            </p>
+          </article>
+
+          <article>
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/P%C3%A3o%20de%20A%C3%A7%C3%BAcar%20-%20Rio%20de%20Janeiro%2C%20Brasil.jpg?width=1280"
+              alt="Pão de Açúcar e Baía de Guanabara, no Rio de Janeiro">
+            <h3>Pão de Açúcar</h3>
+            <p>
+              Um dos cenários mais fotografados do Brasil, o conjunto do Pão de
+              Açúcar e do Morro da Urca é acessado pelo clássico bondinho, com
+              cabines panorâmicas que sobrevoam a Baía de Guanabara. Vá no fim da
+              tarde para assistir ao pôr do sol de um dos mirantes mais famosos
+              do planeta.
+            </p>
+          </article>
+
+          <article>
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Copacabana%2C%20Rio%20de%20Janeiro.jpg?width=1280"
+              alt="Vista aérea da Praia de Copacabana e da Avenida Atlântica">
+            <h3>Praia de Copacabana</h3>
+            <p>
+              São quase 4 quilômetros de areia e mar, margeados pelo calçadão em
+              ondas projetado por Burle Marx. Entre um mergulho e outro, o bairro
+              oferece quiosques, bares tradicionais e uma agenda cheia de eventos —
+              incluindo o Réveillon mais famoso do mundo.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 · Rio de Janeiro · Página desenvolvida para estudo de HTML e CSS · Fotos: Wikimedia Commons</p>
+  </footer>
+
+</body>
+</html>
